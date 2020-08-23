@@ -19,7 +19,7 @@ module.exports = (function() {
 
     UserManager.find = function(nickname, avatar, channel) {
         for(let user of users.values()) {
-            if(user.nickname === nickname, user.avatar === avatar && user.channel === channel)
+            if(user.nickname === nickname && user.avatar === avatar && user.channel === channel)
                 return user;
         }
         return null;
